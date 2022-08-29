@@ -1,0 +1,82 @@
+J/A+A/570/A100     BVRc light curves of 5 CoRoT RR Lyrae stars    (Szabo+, 2014)
+================================================================================
+Revisiting CoRoT RR Lyrae stars: detection of period doubling and temporal
+variation of additional frequencies.
+    Szabo R., Benko J. M., Paparo M., Chapellier E., Poretti E., Baglin A.,
+    Weiss W. W., Kolenberg K., Guggenberger E., Le Borgne J.-F.
+   <Astron. Astrophys. 570, A100 (2014)>
+   =2014A&A...570A.100S
+================================================================================
+ADC_Keywords: Stars, variable ; Photometry
+Keywords: stars: variables: RR Lyrae - stars: oscillations - stars: interiors -
+          techniques: photometric
+
+Abstract:
+    High-precision, space-based photometric missions like CoRoT and Kepler
+    have revealed new and surprising phenomena in classical variable
+    stars. Such discoveries were the period doubling in RR Lyrae stars
+    and the frequent occurrence of additional periodicities some of which
+    can be explained by radial overtone modes, but others are discordant
+    with the radial eigenfrequency spectrum.
+
+    We search for signs of period doubling in CoRoT RR Lyrae stars. The
+    occurrence of this dynamical effect in modulated RR Lyrae stars
+    might help us to gain more information about the mysterious Blazhko
+    effect. The temporal variability of the additional frequencies in
+    representatives of all subtypes of RR Lyrae stars is also
+    investigated.
+
+Description:
+    Ground-based BVR_c observations of CoRoT RR Lyrae stars taken with the
+    Konkoly Observatory 1m RCC telescope.
+
+File Summary:
+--------------------------------------------------------------------------------
+ FileName    Lrecl  Records   Explanations
+--------------------------------------------------------------------------------
+ReadMe          80        .   This file
+stars.dat       83        5   Studied stars (data from table1)
+table3.dat      41      824   The observations
+--------------------------------------------------------------------------------
+
+See also:
+   B/corot : CoRoT observation log Release 13 (CoRoT, 2009-2014)
+
+Byte-by-byte Description of file: stars.dat
+--------------------------------------------------------------------------------
+   Bytes Format Units   Label     Explanations
+--------------------------------------------------------------------------------
+   1-  5  A5    ---     ---       [CoRoT]
+   7- 15  I9    ---     CoRoT     CoRoT Identification
+  17- 18  I2    h       RAh       Right Ascension (J2000.0)
+  20- 21  I2    min     RAm       Right Ascension (J2000.0)
+  23- 27  F5.2  s       RAs       Right Ascension (J2000.0)
+      29  A1    ---     DE-       Declination sign (J2000.0)
+  30- 31  I2    deg     DEd       Declination (J2000.0)
+  33- 34  I2    arcmin  DEm       Declination (J2000.0)
+  36- 40  F5.2  arcsec  DEs       Declination (J2000.0)
+  42- 46  F5.2  mag     Vmag      V magnitude
+  48- 52  A5    ---     Run       CoRoT run (LRc01=Long Run toward Center, 2007)
+  54- 60  A7    ---     Type      RR Lyrae subtype (Bl = with Blazhko effect)
+  62- 66  F5.3  mag     Af01      [0/0.26] Amplitude of the dominant mode(s)
+      67  A1    ---   n_Af01      [ab] Note: a=blended pulsators, 
+                                       b=CoRoT target with colors
+  69- 73  F5.2  d       PBl       ?=- Blazhko period in case of modulated star
+  75- 83  F9.7  d       Per       Pulsation period
+--------------------------------------------------------------------------------
+
+Byte-by-byte Description of file: table3.dat
+--------------------------------------------------------------------------------
+   Bytes Format Units   Label     Explanations
+--------------------------------------------------------------------------------
+   1-  9  I9    ---     CoRoT     CoRoT Identification
+  17- 29  F13.5 d       HJD       Heliocentric Julian Date
+  33- 38  F6.3  mag     mag       Magnitude in Filt
+      41  A1    ---     Filt      [BVR] Filter (R is Cousins' Rc)
+--------------------------------------------------------------------------------
+
+Acknowledgements:
+       Robert Szabo, rszabo(at)konkoly.hu
+
+================================================================================
+(End)                                        Patricia Vannier [CDS]  05-Aug-2014
